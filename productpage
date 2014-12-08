@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="css/style.css"/>
 	</head>
 	<div class="popup-background" id="popup-background" onclick="hide_popup(event);">
-		<div class="popup" >
+		<div class="popup">
 			<div class="popupHeader">Cart
 				<div class="closeButton" onclick="hide_popup_closebutton();"></div>
 			</div>
