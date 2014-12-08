@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width"/>
+		<title>XTRM SPRTS</title>
+		<link rel="stylesheet" href="css/style.css"/>
+	</head>
+    <div class="popup-background" id="popup-background" onclick="hide_popup(event);">
+        <div class="popup" >
+            <div class="popupHeader">Cart
+                <div class="closeButton" onclick="hide_popup_closebutton();"></div>
+            </div>
+            <div class="popupWrapper">
+                <div class="checkProducts"></div>
+                <div class="productsText">HENDRYX VOODOO </div>
+                <div class="price">5999 SEK</div>
+                <div class="select-styled">
+                    <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </div>
+                <div class="deleteButton"></div>
+            </div>
+            <div class="popupWrapper">
+                <div class="checkProducts"></div>
+                <div class="productsText">HENDRYX VOODOO </div>
+                <div class="price">5999 SEK</div>
+                <div class="select-styled">
+                    <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </div>
+                <div class="deleteButton"></div>
+            </div>
+            <div class="popupWrapper">
+                <div class="checkProducts"></div>
+                <div class="productsText">HENDRYX VOODOO </div>
+                <div class="price">5999 SEK</div>
+                <div class="select-styled">
+                    <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </div>
+                <div class="deleteButton"></div>
+            </div>
+        </div>
+    </div>
+	<body>
+
+		<header>
+            <div class="mobile-menu">
+                <select>
+                    <option>Products</option>
+                    <option>Social</option>
+                    <option>Profile</option>
+                    <option>Cart</option>
+                    <option>Checkout</option>
+                </select>
+            </div>
+			<div class="log-head">
+				<a href="front-page.html">
+					<img src="material/logo.png" id="logo"/>
+				</a>
+			</div>
+			<div class="button-head">
+				<a href="products.html">
+					<div class="button prod-but">
+						<div class="button-hover">Products</div>
+					</div>
+				</a>
+				<a href="socail.html">
+					<div class="button soc-but">
+						<div class="button-hover">Social</div>
+					</div>
+				</a>
+				<a href="profile.html">
+					<div class="button prof-but">
+						<div class="button-hover">Profile</div>
+					</div>
+				</a>
+					<div class="button cart-but" id="cartBackground" onclick="show_popup();">
+						<div class="button-hover">Cart</div>
+					</div>
+                <div class="button check-but" id="checkBackground" onclick="show_check();">
+                    <div class="button-hover">Checkout</div>
+                </div>
+			</div>
+		</header>
+		<div class="image-box" id="image-box-1">
+			<div class="image active" style="background-image:url(material/slider/s1.jpg);"></div>
+			<div class="image" style="background-image:url(material/slider/s2.jpg);"></div>
+			<div class="image" style="background-image:url(material/slider/s3.jpg);"></div>
+		</div>
+		<script src="js/image-box.js"></script>
+		<script>
+			var imageBox1=new ImageBox("#image-box-1");
+			imageBox1.start(3);
+		</script>
+		<div class="rec-prod">Recomended products</div>
+		<div class="wrapper">
+			<a href="#">
+				<div class="rec product1">
+					<div class="text pr1">HENDRYX VOODOO<div class="SEK">1899 SEK</div></div>
+				</div>
+			</a>
+			<a href="#">
+				<div class="rec product2">
+					<div class="text pr2">VÖLKL GOTAMA <br> 1899 SEK</div>
+				</div>
+			</a>
+			<a href="#">
+				<div class="rec product3">
+					<div class="text pr3">POC SKULL LIGHT 2.0 <br> 1899 SEK</div>
+				</div>
+			</a>
+			<a href="#">
+				<div class="rec product4">
+					<div class="text pr4">GIRO COMBYN MATTE WHITE <br> 1899 SEK</div>
+				</div>
+			</a>
+		</div>
+		<div class="latest-social">Latest social</div>
+			<div class="wrapper">
+				<a href="#">
+					<div class="latest soc1"></div>
+				</a>
+				<a href="#">
+					<div class="latest soc2"></div>
+				</a>
+				<a href="#">
+					<div class="latest soc3"></div>
+				</a>
+				<a href="#">
+					<div class="latest soc4"></div>
+				</a>
+		</div>
+		<footer>
+			<div class="footer1">
+				<h3>XTRM SPRTS</h3>
+				Storgatan 15<br>
+				123 45<br>
+				Storstaden</div>
+			<div class="footer2">
+				info@xtrmsprts.com<br>
+				08-111 111</div>
+		</footer>
+        <a class="popupCheckout" id="popupCheckout" onclick="hide_popup(event);">
+            <div class="popCheck">
+                <div class="check-head">Checkout
+                    <div class="check-close" onclick="hide_closebutton();"></div>
+                </div>
+                <div class="check-text">
+                    <h2>Confirm adress</h2>
+                    Arne Gunnarsson <br>
+                    Gladavägen 666 <br>
+                    133 70 Stockholm
+                </div>
+                <div class="object" id="object" onclick="hide_object();">
+                    <div class="klarna" onclick="show_object(event);">Continue to Klarna
+                        <div>
+                            <object type="text/html" data="http://klarna.com/se/">
+                            </object>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    <script src="js/event.js"></script>
+    </body>
+</html>
